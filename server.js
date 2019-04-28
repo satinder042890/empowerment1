@@ -5,7 +5,7 @@ var passport = require("./config/passport");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
-const PORT = process.env.PORT || 4001;
+// const PORT = process.env.PORT || 4001;
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -26,6 +26,6 @@ app.use(routes);
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/empowerment");
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(process.env.PORT || 4001, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
