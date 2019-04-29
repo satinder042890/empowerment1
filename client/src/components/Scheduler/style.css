@@ -1,4 +1,8 @@
-h2 {
-    top: 10%;
+
+#main{
+    width:80%;
+    margin: 5% auto 5% auto;
+    border: 2px solid green;
+    padding: 2%;
 }
 
