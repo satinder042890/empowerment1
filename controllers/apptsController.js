@@ -47,9 +47,10 @@ module.exports = {
             })
           .catch(err => res.json(err));
     },
-    delete: function(req, res) {
+    remove: function(req, res) {
         db.Appointment
         .findById({ _id: req.params.id })
+        console.log(req.params.id)
         .then(dbModel => dbModel.remove())
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));

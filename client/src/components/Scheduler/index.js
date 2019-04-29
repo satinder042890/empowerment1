@@ -13,6 +13,7 @@ export default class Scheduler extends React.Component {
   constructor(props) {
     super(props);
     this.handleDayClick = this.handleDayClick.bind(this);
+    this.deleteAppt = this.deleteAppt.bind(this);
     this.state = {
       appointments: [],
       selectedDay: null,
@@ -93,7 +94,7 @@ export default class Scheduler extends React.Component {
     // }
   };
 
-  deleteAppt = id => {
+  deleteAppt = (id) => {
     API.deleteAppt(id)
       .then(res => this.loadAppts())
       .catch(err => console.log(err));
@@ -237,6 +238,7 @@ export default class Scheduler extends React.Component {
                     title={appointment.title}
                     apptType={appointment.apptType}
                     date={appointment.date}
+                    onClick={() => this.deleteAppt(appointment._id)}
                     >
                         {/* <DeleteBtn onClick={() => this.deleteAppt(appointment._id)} /> */}
                         </FutureItems>

@@ -13,8 +13,8 @@ const ApptRoutes = {
     getAppts: function(id) {
       return axios.get("/api/scheduler/"+id)
     },
-    deleteAppt: function(id) {
-      return axios.delete("/api/scheduler/" + id)
+    deleteAppt: function(id,apptId) {
+      return axios.delete("/api/scheduler/" + id + "/" + apptId)
     },
       logIn: function(data){
         return axios.post("/api/login",data);
