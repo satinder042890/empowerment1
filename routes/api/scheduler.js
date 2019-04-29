@@ -11,7 +11,8 @@ router.route("/:id")
 //   .get(apptsController.findById)
 //   .delete(apptsController.remove);
 
-
+router.route("/:id")
+.delete(apptsController.remove);
 module.exports = router;
 
 //request all appts

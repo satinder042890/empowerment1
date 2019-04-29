@@ -24,6 +24,9 @@ export function FutureItems(props) {
             </div>
             <div className="row">
                 <p>{props.date}</p>
+                <button {...props} className="btn btn-danger">
+                    Delete
+                </button>
             </div>
         </li>
     )
