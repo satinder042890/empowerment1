@@ -24,7 +24,7 @@ export function FutureItems(props) {
             </div>
             <div className="row">
                 <p>{props.date}</p>
-                <button onClick={props.deleteAppt} className="btn btn-danger">
+                <button {...props} className="btn btn-danger">
                     Delete
                 </button>
             </div>

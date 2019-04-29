@@ -95,6 +95,7 @@ export default class Scheduler extends React.Component {
   };
 
   deleteAppt = (id) => {
+    console.log(id);
     API.deleteAppt(id)
       .then(res => this.loadAppts())
       .catch(err => console.log(err));

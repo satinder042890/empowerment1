@@ -11,7 +11,7 @@ router.route("/:id")
 //   .get(apptsController.findById)
 //   .delete(apptsController.remove);
 
-router.route("/:id/:apptId")
+router.route("/:id")
 .delete(apptsController.remove);
 module.exports = router;
 
