@@ -35,6 +35,9 @@ const ApptRoutes = {
     },
     sendText: function(number,message){
       return axios.get("/api/contact/"+number+"/"+message)
+    },
+    getNews: function(){
+      return axios.get("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=3fa8a7d77cf64dc6842b2f142ec08716")
     }
 };
 
