@@ -16,7 +16,7 @@ class Navbar extends Component{
   <ul className="navbar-nav mr-auto">
    
     <Navheadings href={"/entertainment/"+this.props.id} heading="Entertainment"></Navheadings>
-    <Navheadings href={"/safety/"+this.props.id} heading="Safety"></Navheadings>
+    <Navheadings href={"/safety/"+this.props.id} heading="Health"></Navheadings>
     
    
       <li className="nav-item dropdown">
@@ -35,7 +35,7 @@ class Navbar extends Component{
   <ul className="navbar-nav mr-auto">
    
     <Navheadings href={"/entertainment/"+this.props.id} heading="Entertainment"></Navheadings>
-    <Navheadings href={"/safety/"+this.props.id} heading="Safety"></Navheadings>
+    <Navheadings href={"/safety/"+this.props.id} heading="Health"></Navheadings>
     <Navheadings href={"/scheduler/"+this.props.id} heading="Scheduler"></Navheadings>
     <Navheadings href={"/tracker/"+this.props.id} heading="Tracker"></Navheadings>
    
