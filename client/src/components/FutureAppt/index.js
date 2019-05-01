@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-import * as moment from 'moment';
+// import * as moment from 'moment';
 export function FutureAppt({children}) {
     return(
         <div className="row" id="futureCont">
@@ -23,7 +23,7 @@ export function FutureItems(props) {
                 </div>
             </div>
             <div className="row">
-                <p>{moment(props.date).format("dddd, MMMM Do YYYY")}</p>
+                {/* <p>{moment(props.date).format("dddd, MMMM Do YYYY")}</p> */}
                 <button {...props} className="btn btn-success typeCol">
                     Delete
                 </button>

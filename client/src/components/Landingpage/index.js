@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import Navbar from "../Navbar";
+import "./index.css";
 class Landingpage extends Component {
     state={
         id:1

@@ -6,7 +6,7 @@ import Rodal from 'rodal';
 
 import "./style.css";
 import 'rodal/lib/rodal.css';
-import * as moment from 'moment';
+// import * as moment from 'moment';
 class Entertainment extends Component {
     state = {
         result: [],
@@ -51,10 +51,10 @@ class Entertainment extends Component {
         return (
             <div>
                 <Navbar id={this.props.match.params.id} />
-                <ul className="list-inline text-center list">
-                    <li className="list-inline-item first" onClick={this.showNews}>News</li>
-                    <li className="list-inline-item" onClick={this.showGames}>Games</li>
-                    <li className="list-inline-item" onClick={this.showParties}>Parties</li>
+                <ul className="list-inline text-center list" id="navOptions">
+                    <li id="choices" className="list-inline-item first" onClick={this.showNews}>News</li>
+                    <li id="choices" className="list-inline-item" onClick={this.showGames}>Games</li>
+                    <li id="choices" className="list-inline-item" onClick={this.showParties}>Parties</li>
                 </ul>
                 {this.state.news ?
                 <div id="news">
@@ -69,7 +69,7 @@ class Entertainment extends Component {
                                 </div>
                                 <div className="col-9">
                                     <p>{news.description}</p>
-                                    <h6>Published At : {moment(news.publishedAt).format("dddd, MMMM Do YYYY, h:mm:ss a")} </h6>
+                                    {/* <h6>Published At : {moment(news.publishedAt).format("dddd, MMMM Do YYYY, h:mm:ss a")} </h6> */}
                                 </div>
                             </div>
                             <hr></hr>
