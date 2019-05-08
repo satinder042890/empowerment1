@@ -44,7 +44,7 @@ class Health extends Component {
           <option selected>Specialties...</option>
           <option value="massage-therapy">Massage Therapy</option>
           <option value="dentist">Dentist</option>
-          <option value="3">Three</option>
+          <option value="Pediatrics">Surgeon</option>
         </select>
         </div>
           
@@ -68,14 +68,14 @@ class Health extends Component {
           pic={doctor.profile.image_url}
           spec={doctor.specialties[0].name}
           business={doctor.practices.length == 0 ?
-            "NONE" : doctor.practices[0].name}
+            "" : doctor.practices[0].name}
           address={doctor.practices.length == 0 ? 
             null :doctor.practices[0].visit_address.street + ", " +
              doctor.practices[0].visit_address.city + ", " + 
              doctor.practices[0].visit_address.state + " " + 
              doctor.practices[0].visit_address.zip}
           number={doctor.practices.length == 0 ? 
-            "NONE" : doctor.practices[0].phones[0].number}
+            "" : doctor.practices[0].phones[0].number}
 
         />) : <h3>Search with correct Information</h3>}
         </Formgroup>
