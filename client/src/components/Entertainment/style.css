@@ -4,12 +4,18 @@
 #choices{
     /* please make this black */
     color: rgb(77, 2, 33);
+    background-color: white;
+}
+body {
+    background-image: url("../../images/trendy.jpg");
+    background-size: 100%;
 }
 #news{
     width:80%;
     margin: 5% auto 5% auto;
     border: 6px solid #320233;
     padding: 2%;
+    background-color: white;
 }
 /* 
 Form {
@@ -28,4 +34,9 @@ Form {
 }
 a{
     color: black;
+}
+.text-center{
+    background-color: white;
+    padding: -10px;
+    margin: -10px;
 }

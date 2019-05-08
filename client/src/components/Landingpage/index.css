@@ -1,4 +1,5 @@
-body {
-    background-image:linear-gradient(red, yellow, blue) url("../../images/trendy.jpg");
+/* body {
+    background-image: url("../../images/trendy.jpg");
+    background-image:linear-gradient(red, yellow, blue);
     background-size: 100%;
-}
+} */

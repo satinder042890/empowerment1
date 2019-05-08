@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import Navbar from "../Navbar";
-import "./index.css";
+import Jumbotron from "./jumbotron/index"
 class Landingpage extends Component {
     state={
         id:1
@@ -16,11 +16,16 @@ class Landingpage extends Component {
       }
     render(){
         return (
-      
+      <div>
             <Navbar id="1"/>
         
+            <Jumbotron></Jumbotron>
+            {/* <Intro></Intro> */}
+      </div> 
     )
     }  
     
 }
+
+
 export default Landingpage;

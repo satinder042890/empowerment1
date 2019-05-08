@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Rancho';
+@import 'https://fonts.googleapis.com/css?family=Bigshot+One|Jomhuria';
+.cardDiv {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  left:20%;
+  width: 60%;
+  
+}
+
+#card{
+  background-color: rgba(255, 255, 255, 0.726);
+}
+
+h3{
+  font-size: 80px;
+  font-family: 'Jomhuria', cursive;
+}
+
+p{
+  font-size: 40px;
+  font-family: 'Jomhuria', cursive;
+}
+
+.card-header{
+  font-size: 80px;
+  /* font-family: 'Rancho', cursive; */
+  font-family: 'Bigshot One', cursive;
+
+}

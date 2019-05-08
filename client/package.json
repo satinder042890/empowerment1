@@ -5,6 +5,7 @@
   "proxy": "http://localhost:4001/",
   "dependencies": {
     "axios": "^0.18.0",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-day-picker": "^7.3.0",
     "react-dom": "^16.8.6",
